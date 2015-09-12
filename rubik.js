@@ -455,6 +455,7 @@ YUI.add('rubik', function (Y) {
         },
         
         _doMovement:function (m,fromQueue) {
+            console.log(m);
             if (this._moving)return;//we cancel if there is some movement going on
             //save the movement if doesnt came from the queue.
             if(!fromQueue){

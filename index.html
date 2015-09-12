@@ -17,11 +17,20 @@
     <link href='http://fonts.googleapis.com/css?family=Luckiest+Guy' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style.css"></link>  
     <link rel="stylesheet" href="rubik.css"></link>  
+    <script src="../recorder/javascripts/lib/jquery-2.1.0.min.js"></script>
     <script src="http://yui.yahooapis.com/3.4.1/build/yui/yui-min.js"></script>
     <script src="rubik.js"></script>
     <script src="message-scroll.js"></script>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/three.js/r67/three.js"></script>
+    <script src="http://js.leapmotion.com/leap-0.6.2.min.js"></script>
+    <script src="http://js.leapmotion.com/leap-plugins-0.1.6.1.js"></script>
+    <script src="http://js.leapmotion.com/leap.rigged-hand-0.1.4.min.js"></script>
+    <script src="display.js"></script>
 </head>
 <body>
+<div id="output" style="position:absolute;z-index:-10;top:0;left:0;"></div>
+<div id="progress"></div>
 <header>
     <hgroup>
         <h1>Rubik's</h1>
@@ -30,45 +39,6 @@
         </h2>
     </hgroup>
 </header>
-
-<section id="log">
-    <div class= "twitter">
-    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://html5rubik.com" data-text="Rubik's cube in HTML5 (CSS3 and JavaScript) Check it out in your mobile/tablet!" data-lang="en" data-hashtags="html5rubik">Twittear</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-    </div>
-
-<div class="facebook">
-<iframe  src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fhtml5rubik.com&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:150px; height:21px;" allowTransparency="true">
-</iframe>
-</div>
-<a href="tutorial">
-<div class="html5">
-    <span href="/tutorial">Tutorial</span>
-</div>
-</a>
-
-</section>
-
-<section id="ads">
-<script type="text/javascript"><!--
-google_ad_client = "ca-pub-5950464454835011";
-/* rubik-mainpage */
-google_ad_slot = "3487054699";
-google_ad_width = 320;
-google_ad_height = 50;
-//-->
-</script>
-<script type="text/javascript"
-src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-</script>
-</section>
-
-<section id="tutorial">
-    <p><span>Move</span> your device to trigger the accelerometers and rotate the cube. 
-        Use <span>flick</span> gestures to move the faces. 
-    <span>Rotate</span> your device to start the <span class="yellow">landscape</span> application. Have fun!</p>
-</section>
 
 <section id="messages">
 <div class="wrapper">
